@@ -104,4 +104,4 @@ combo_lock.turnLeft(30)
 combo_lock.turnRight(10)
 print(combo_lock.open())
 
-        
+       
