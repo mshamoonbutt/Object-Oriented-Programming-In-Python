@@ -5,6 +5,6 @@ def is_palindrome(s):
         return is_palindrome(s[1:-1])
     else:
         return False
-input_string = "radar"
+input_string = "racecar"
 print("Input string:", input_string)
 print("Is palindrome:", is_palindrome(input_string))
