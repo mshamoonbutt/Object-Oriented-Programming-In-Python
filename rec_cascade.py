@@ -9,3 +9,5 @@ def cascade(s):
         print(s)
         cascade(s[:-1])  
         print(s)       
+
+cascade("hello")

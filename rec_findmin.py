@@ -18,4 +18,6 @@ def findMin(lst):
     if len(lst) == 1:
         return lst[0]
     else:
-        return min(lst[0], findMin(lst[1:]))     
+        return min(lst[0], findMin(lst[1:]))   
+      
+findMin([5, 2, 9, 1, 7])    
