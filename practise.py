@@ -140,7 +140,7 @@ if customer:
 else:
     print("Invalid username or password.")                    '''
     
-class MonsterAcademy:
+'''class MonsterAcademy:
     def __init__(self):
         self.current_room = "main entrance"
 
@@ -233,4 +233,26 @@ class MonsterAcademy:
 
 
 game = MonsterAcademy()
-game.start_game()    
+game.start_game()    '''
+
+class Bug:
+    def __init__(self, initial_pos):
+        self.initial_pos = initial_pos
+
+    def turn(self):
+        # Negate the initial position
+        self.initial_pos = -self.initial_pos
+
+    def move(self):
+        # Move the bug one unit
+        self.initial_pos += 1
+
+    def getPosition(self):
+        # Get the absolute position
+        return abs(self.initial_pos)
+
+bug = Bug(5)  # Initialize bug at position 5
+print(bug.getPosition())  # Output: 5
+bug.turn()  # Turn the bug
+bug.move()  # Move the bug
+print(bug.getPosition())  # Output: 6

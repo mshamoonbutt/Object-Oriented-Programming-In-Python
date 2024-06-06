@@ -20,3 +20,5 @@ def Sum(lst):
         return 0
     else:
         return lst[0] + Sum(lst[1:])  
+    
+print(Sum([5,2,9,1,7]))   
